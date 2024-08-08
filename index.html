@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <h1>App Gerenciador de Contatos</h1>
+        <h1>Gerenciador de Contatos</h1>
         <div>
             <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="prepararAdicionarContato()">Adicionar Contato</button>
             <button type="button" class="btn btn-success" onclick="listarContatos()">Listar Contatos</button>
@@ -41,19 +41,23 @@
 
     <main>
         <div class="containerContatos">
-            <table class="table-responsive table-striped listaContatos">
-                <thead>
-                    <th>ID</th>
-                    <th>Nome</th>
-                    <th>Sobrenome</th>
-                    <th>Telefone</th>
-                    <th>Email</th>
-                    <th>Editar</th>
-                    <th>Deletar</th>
-                </thead>
-                <tbody>
-                </tbody>
-            </table>
+            <div class="table-responsive">
+                <table class="table table-striped listaContatos">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nome</th>
+                            <th>Sobrenome</th>
+                            <th>Telefone</th>
+                            <th>Email</th>
+                            <th>Editar</th>
+                            <th>Deletar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </main>
 
